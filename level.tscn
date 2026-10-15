@@ -14,4 +14,4 @@ enemy_scene = ExtResource("2_oi3di")
 wait_time = 0.5
 autostart = true
 
-[connection signal="timeout" from="Timer" to="Player" method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
