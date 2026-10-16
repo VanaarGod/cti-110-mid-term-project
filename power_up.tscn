@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://3hq6coh4docy"]
+
+[ext_resource type="Texture2D" uid="uid://bfaokot3ruwcx" path="res://power-up-icon-sign-symbol-flat-illustration-vector-188936389.webp" id="1_lbdsv"]
+[ext_resource type="Script" uid="uid://s5b5wxavguxc" path="res://power_up.gd" id="1_mkoic"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iv2tj"]
+
+[node name="PowerUp" type="Area2D" unique_id=811734841]
+scale = Vector2(0.485, 0.485)
+script = ExtResource("1_mkoic")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1319447708]
+scale = Vector2(0.165, 0.165)
+texture = ExtResource("1_lbdsv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1619292476]
+scale = Vector2(6.66, 6.66)
+shape = SubResource("CircleShape2D_iv2tj")
