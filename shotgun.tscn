@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://div4rjcwffn2j"]
+
+[ext_resource type="Script" uid="uid://uyh8rmi1322j" path="res://shotgun.gd" id="1_hn68x"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ysfag"]
+radius = 12.01
+
+[node name="Shotgun" type="RigidBody2D" unique_id=1214276154]
+script = ExtResource("1_hn68x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=572547933]
+scale = Vector2(5.945, 5.945)
+shape = SubResource("CircleShape2D_ysfag")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=111714253]
+position = Vector2(-1144, 0)
+polygon = PackedVector2Array(1152, -16, 1160, -16, 1168, -8, 1168, 8, 1160, 16, 1152, 16)
+
+[node name="Polygon2D2" type="Polygon2D" parent="." unique_id=1795569982]
+position = Vector2(-1109.9684, -248.35197)
+rotation = 0.2617994
+polygon = PackedVector2Array(1152, -16, 1160, -16, 1168, -8, 1168, 8, 1160, 16, 1152, 16)
+
+[node name="Polygon2D3" type="Polygon2D" parent="." unique_id=1622656154]
+position = Vector2(-1124.8027, 192.50269)
+rotation = -0.20769419
+polygon = PackedVector2Array(1152, -16, 1160, -16, 1168, -8, 1168, 8, 1160, 16, 1152, 16)
+
+[node name="TrailPivot" type="Node2D" parent="." unique_id=1408378200]
+
+[node name="Polygon2D" type="Polygon2D" parent="TrailPivot" unique_id=115252530]
+position = Vector2(-1144, 0)
+polygon = PackedVector2Array(1152, -16, 1112, 0, 1152, 16)
+
+[node name="Polygon2D2" type="Polygon2D" parent="TrailPivot" unique_id=320341915]
+position = Vector2(-1109.9684, -248.35197)
+rotation = 0.2617994
+polygon = PackedVector2Array(1152, -16, 1112, 0, 1152, 16)
+
+[node name="Polygon2D4" type="Polygon2D" parent="TrailPivot" unique_id=1535980754]
+position = Vector2(-1124.8027, 192.50269)
+rotation = -0.20769419
+polygon = PackedVector2Array(1152, -16, 1112, 0, 1152, 16)
+
+[node name="Timer" type="Timer" parent="." unique_id=30266574]

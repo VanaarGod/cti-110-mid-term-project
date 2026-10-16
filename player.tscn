@@ -2,13 +2,13 @@
 
 [ext_resource type="Script" uid="uid://dos4e6r26aajm" path="res://player.gd" id="1_onrkg"]
 [ext_resource type="PackedScene" uid="uid://dhqxgeiftm2tc" path="res://bullet.tscn" id="2_onrkg"]
+[ext_resource type="PackedScene" uid="uid://div4rjcwffn2j" path="res://shotgun.tscn" id="3_hqtel"]
 [ext_resource type="AudioStream" uid="uid://bi0gs0065ymqw" path="res://AudioAssets/shot.ogg" id="3_i3pqv"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_7oeq1"]
 
 [node name="Player" type="Node2D" unique_id=2066626108]
 script = ExtResource("1_onrkg")
 bullet_scene = ExtResource("2_onrkg")
+shotgun_scene = ExtResource("3_hqtel")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=245628164]
 
@@ -18,9 +18,3 @@ polygon = PackedVector2Array(-128, -32, 32, 0, 32, 0, -128, 32)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1845374159]
 stream = ExtResource("3_i3pqv")
-
-[node name="PowerUpDetector" type="Area2D" parent="." unique_id=782985815]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PowerUpDetector" unique_id=264157855]
-scale = Vector2(38.59, 38.59)
-shape = SubResource("CircleShape2D_7oeq1")
